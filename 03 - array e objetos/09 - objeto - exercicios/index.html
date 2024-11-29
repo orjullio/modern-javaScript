@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercícios Obejtos</h1>
+
+    <h2>Exercicio 1</h2>
+    <p> um array de objetos chamados library. Adicione 3 objetos com as propriedades titulo, autor, estatus. Título e autor podem ser strings e estatus pode ser outro objeto com propriedades de 'proprietário', 'lendo' e 'leitor'. Escolha todos os valores booleanos. para estado use proprietário para verdadeiro e 'lendo' e 'leitor' para falso. 
+    </p>
+    <p></p>
+    <h2>Exercício 2</h2>
+    <p>De o valor read para todos </p>
+
+    <p>
+        [
+  {
+    title: 'Vai pra vida',
+    author: 'Angela',
+    status: { own: true, reading: false, read: true }
+  },
+  {
+    title: 'Adriana',
+    author: 'Encarando a vida',
+    status: { own: true, reading: false, read: true }
+  },
+  {
+    title: 'Aproveitando a Vida',
+    author: 'Rodrigo Júlio',
+    status: { own: true, reading: false, read: true }
+  }
+]
+
+[Done] exited with code=0 in 0.532 seconds
+
+    </p>
+
+    <h2>Desetruture o titulo do primeiro livro e renomeie a variável para fristBook</h2>
+    <p>const { title: firstBook } = library[0];
+
+        console.log(firstBook);</p>
+
+    <p>
+        [
+  {
+    title: 'Vamos pra vida',
+    author: 'Angela',
+    status: { own: true, reading: false, read: true }
+  },
+  {
+    title: 'Adriana',
+    author: 'Encarando a vida',
+    status: { own: true, reading: false, read: true }
+  },
+  {
+    title: 'Aproveitando a Vida',
+    author: 'Rodrigo Júlio',
+    status: { own: true, reading: false, read: true }
+  }
+]
+Vamos pra vida
+
+[Done] exited with code=0 in 0.103 seconds
+
+    </p>    
+
+    <h2>Torne o objeto library em JSON string</h2>
+
+    <p>
+        const libraryJSON = JSON.stringify(library);
+
+        console.log(libraryJSON);
+    </p>
+
+    <p>
+        [{"title":"Vamos pra vida","author":"Angela","status":{"own":true,"reading":false,"read":true}},{"title":"Adriana","author":"Encarando a vida","status":{"own":true,"reading":false,"read":true}},{"title":"Aproveitando a Vida","author":"Rodrigo Júlio","status":{"own":true,"reading":false,"read":true}}]
+    </p>
+    <script src="script.js"></script>
+    
+</body>
+</html>
