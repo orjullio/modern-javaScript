@@ -1,8 +1,8 @@
 let x;
 
-const frutas = ['banana', 'goiaba', 'jabuticaba', 'melancia'];
+const frutas = ["banana", "goiaba", "jabuticaba", "melancia"];
 
-const deVerao = ['uva', 'manga', 'amendoa', 'maçã'];
+const deVerao = ["uva", "manga", "amendoa", "maçã"];
 
 frutas.push(deVerao);
 
@@ -25,8 +25,8 @@ x = arr.flat();
 
 //métodos estáticos no objeto array
 x = Array.isArray(frutas);
-x = Array.from('1234567890');
-x = Array.from('chocolate');
+x = Array.from("1234567890");
+x = Array.from("chocolate");
 
 const a = 1;
 const b = 2;
@@ -35,3 +35,5 @@ const c = 3;
 x = Array.of(a, b, c);
 
 console.log(x);
+//global e funcao escopo
+alert("caraio!");
