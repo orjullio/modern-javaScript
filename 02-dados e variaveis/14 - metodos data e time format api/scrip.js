@@ -14,11 +14,24 @@ x = d.getMinutes();
 x = d.getSeconds();
 x = d.getMilliseconds();
 x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+console.log(x);
 
+console.log(' ')
 // mudando a localidade da forma da data.
 
 x = Intl.DateTimeFormat('en-US').format(d);
 x = Intl.DateTimeFormat('default').format(d);
 x = Intl.DateTimeFormat('default', { month: 'long' }).format(d);
-x = d.toLocaleDateString('default', {month: 'short'})
+x = d.toLocaleDateString('default', {month: 'short'});
+console.log(x);
+
+x = d.toLocaleString('default', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+});
 console.log(x);

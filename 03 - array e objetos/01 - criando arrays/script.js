@@ -2,7 +2,8 @@ let x;
 
 //Array Literal
 const numeros = [3, 32, 44, 65, 98, 100];
-console.log(numeros);
+x = numeros;
+console.log(x);
 
 //Contrutor do Array
 const frutas = new Array('pera', 'banana', 'tangerina');
