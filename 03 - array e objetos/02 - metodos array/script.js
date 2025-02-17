@@ -14,11 +14,15 @@ console.log('inverteu a posição de todos os elementos: ',arr);
 
 
 x = arr.includes(20);
-console.log(x);
+console.log('incluindo o elemento 20: ', arr, x);
 x = arr.indexOf(3);
+console.log('posição 3: ', x);
 x = arr.slice(3);
+console.log('retirou os 3 primeiros elementos: ',x);
 x = arr.slice(1, 4);
-x = arr.splice(3, 3);
+console.log('retirou o primeiro e o quarto elemento que havia no array: ', x);
+x = arr.splice(3, 1);
+console.log('splice: acredito que seja o elemento com o valor mais alto: ',x);
 x = arr.splice(1, 4).toString().charAt(0);
 
-console.log(x, typeof(x), arr);
+//console.log(x, typeof(x), arr);
