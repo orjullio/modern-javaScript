@@ -5,27 +5,27 @@ const pessoa = {
     idade: '2',
     isAdmin: true,
     endereco: {
-        rua: 'Rua Dr. Barros Júnior',
-        numero: '1911',
-        complemento: 'Bloco 2 Apartamento, 211',
-        bairro: 'Metrópole',
+        rua: 'Rua Dos Bobos',
+        numero: '0',
+        complemento: 'Casa',
+        bairro: 'João de Barro',
         cidade: 'Nova Iguaçu',
         estado: 'Rio de Janeiro'
     }
 };
 x = pessoa.nome;
-x = pessoa.idade;
+console.log(x);
+x = pessoa['idade'];
+console.log(x);
 x = pessoa.endereco.rua;
-
+console.log(x);
 delete pessoa.idade;
 x = pessoa;
+console.log(x);
 
 pessoa.saudacao = function () {
     console.log(`Olá! Meu nome é ${this.nome}`);
 };
-
 pessoa.saudacao();
-
 x = pessoa;
-
 console.log(x);
