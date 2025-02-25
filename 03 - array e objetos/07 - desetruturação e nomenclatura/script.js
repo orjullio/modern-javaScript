@@ -1,10 +1,10 @@
 const primeiroNome = 'Adriana';
-const segundoNome = 'Ângela';
+const ultimoNome = 'Costa';
 const idade = 39;
 
 const pessoa = {
     primeiroNome: primeiroNome,
-    segundoNome: segundoNome,
+    ultimoNome: ultimoNome,
     idade: idade
 };
 
@@ -18,12 +18,19 @@ const livro = {
     titulo: 'Livro Novo',
     usuario: {
         nome: 'Preta Gil',
+        tipo: 'cachorro doido',
     }
 };
 
-const {id, titulo, usuario:{nome},} = livro
+const {
+    id, titulo,
+    usuario:{nome},
+} = livro
 
 console.log(livro);
+console.log(livro.id);
+console.log(livro.titulo);
+console.log(livro.usuario);
 
 // desestruturando arrays
 
