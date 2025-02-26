@@ -1,5 +1,7 @@
 //alert("Olá!");
-//console.log(innerWidth);
+console.log(window.innerWidth);
+//ou
+console.log('altura: ',innerHeight, 'largura: ',innerWidth);
 
 const x = 100;
 console.log(x, "no escopo global");

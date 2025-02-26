@@ -1,16 +1,19 @@
-// funcao com retorno
+//função registrar usuário
+function registrarUsuario(usuario){
+    if(!usuario){
+        usuario = 'É um Bot!';
+    }
 
-
-function subtract(num1, num2) {
-    return num1 - num2;
+    return usuario + ' está registrado';
 }
-
-const result = subtract(10, 2);
-console.log(result, subtract(15, 5));
-
+console.log(registrarUsuario('Ângela'));
 
 
 //Parametros Rest
+function soma(...numeros){
+    return numeros;
+}
+console.log(soma(1,2,3,4,5,6)); // criou um array
 
 function sum(...numbers) {
     let total = 0;
@@ -18,24 +21,21 @@ function sum(...numbers) {
     for (const num of numbers) {
         total += num;
     }
-
-    return total
+    return total;
 }
-console.log(sum(1, 2, 3, 4, 5, 6));  
+console.log(sum(1, 2, 3, 4, 5, 6, 55));  
 
 
 // objetos como parametros
-
 function loginUser(user) {
     return `O usuário ${user.nome} de id ${user.id} está logado.`
 }
-
 const user = {
     id: 1,
     nome: 'Ângela',
 };
-
 console.log(loginUser(user));
+
 console.log(
     loginUser({
         id: 2,
@@ -44,7 +44,6 @@ console.log(
 );
 
 //Arrays como parametro
-
 function getRandom(...arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
 
