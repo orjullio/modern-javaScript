@@ -14,4 +14,4 @@ let redirect = auth
 console.log(redirect);
 
 auth ? console.log('Usuário logado') : console.log('Usuário precisa fazer login');
-auth && console.log('Usuário logado');
+auth && console.log('Usuário logado');vive
