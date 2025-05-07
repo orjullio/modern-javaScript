@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>método array.reduce()</title>
+</head>
+<body>
+    <h1>Método array.reduce()</h1>
+    <p>O método <code>array.reduce()</code> é utilizado para aplicar uma função a cada elemento de um array, reduzindo-o a um único valor. Ele recebe dois parâmetros: uma função de callback e um valor inicial opcional.</p>
+    <p>A função de callback recebe quatro parâmetros: o acumulador, o valor atual, o índice do valor atual e o array original.</p>
+    <p>O método <code>array.reduce()</code> é útil para somar valores, calcular médias, concatenar strings, entre outras operações.</p>
+    <h2>Exemplo de uso</h2>
+    <pre><code>const numeros = [1, 2, 3, 4, 5];
+const soma = numeros.reduce((acumulador, valorAtual) => {
+    return acumulador + valorAtual;
+}, 0);      
+console.log(soma); // Saída: 15</code></pre>
+    <p>No exemplo acima, o método <code>reduce()</code> é utilizado para somar todos os números do array <code>numeros</code>. O valor inicial do acumulador é 0.</p>
+    <h2>Exemplo com objeto</h2>
+    <pre><code>const produtos = [
+    { nome: 'Produto 1', preco: 10 },
+    { nome: 'Produto 2', preco: 20 },
+    { nome: 'Produto 3', preco: 30 }
+];
+const total = produtos.reduce((acumulador, produto) => {
+    return acumulador + produto.preco;
+}, 0);
+console.log(total); // Saída: 60</code></pre>
+    <p>No exemplo acima, o método <code>reduce()</code> é utilizado para calcular o preço total de todos os produtos no array <code>produtos</code>. O valor inicial do acumulador é 0.</p>
+    <h2>Exemplo com string</h2>
+    <pre><code>const palavras = ['Olá', ' ', 'mundo', '!'];
+const frase = palavras.reduce((acumulador, valorAtual) => {
+    return acumulador + valorAtual;
+}, '');
+console.log(frase); // Saída: 'Olá mundo!'</code></pre>
+    <p>No exemplo acima, o método <code>reduce()</code> é utilizado para concatenar todas as palavras do array <code>palavras</code>. O valor inicial do acumulador é uma string vazia.</p>
+    <h2>Considerações finais</h2>
+    <p>O método <code>array.reduce()</code> é uma ferramenta poderosa para manipulação de arrays em JavaScript. Ele permite realizar operações complexas de forma concisa e legível.</p>    
+    <p>É importante lembrar que o método <code>reduce()</code> não altera o array original, mas sim retorna um novo valor.</p>
+    <p>Além disso, o valor inicial do acumulador é opcional. Se não for fornecido, o primeiro elemento do array será utilizado como valor inicial e a iteração começará a partir do segundo elemento.</p>
+    <p>O método <code>reduce()</code> pode ser utilizado em arrays de qualquer tipo, incluindo números, strings, objetos e até mesmo outros arrays.</p>
+
+    <p>Para mais informações, consulte a documentação oficial do JavaScript.</p>
+    <p>Link: <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">MDN Web Docs - Array.prototype.reduce()</a></p>
+    <p>Link: <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">W3Schools - Array reduce()</a></p>
+    <p>Link: <a href="https://www.freecodecamp.org/portuguese/news/javascript-array-reduce/">FreeCodeCamp - JavaScript Array reduce()</a></p>
+    <p>Link: <a href="https://www.digitalocean.com/community/tutorials/javascript-array-reduce">DigitalOcean - JavaScript Array reduce()</a></p>
+    <p>Link: <a href="https://www.taniarascia.com/using-reduce-in-javascript/">Tania Rascia - Using reduce in JavaScript</a></p>
+    <p>Link: <a href="https://www.smashingmagazine.com/2020/06/understanding-reduce/">Smashing Magazine - Understanding reduce()</a></p>
+    <p>Link: <a href="https://www.freecodecamp.org/news/javascript-array-reduce/">FreeCodeCamp - JavaScript Array reduce()</a></p>
+    <p>Link: <a href="https://www.codecademy.com/articles/what-is-reduce">Codecademy - What is reduce?</a></p>
+    <p>Link: <a href="https://www.javascripttutorial.net/javascript-array/javascript-reduce/">JavaScript Tutorial - JavaScript Array reduce()</a></p>
+    <p>Link: <a href="https://www.taniarascia.com/using-reduce-in-javascript/">Tania Rascia - Using reduce in JavaScript</a></p>
+    <p>Link: <a href="https://www.smashingmagazine.com/2020/06/understanding-reduce/">Smashing Magazine - Understanding reduce()</a></p>
+    <p>Link: <a href="https://www.freecodecamp.org/news/javascript-array-reduce/">FreeCodeCamp - JavaScript Array reduce()</a></p>
+    <p>Link: <a href="https://www.codecademy.com/articles/what-is-reduce">Codecademy - What is reduce?</a></p>
+    <p>Link: <a href="https://www.javascripttutorial.net/javascript-array/javascript-reduce/">JavaScript Tutorial - JavaScript Array reduce()</a></p>
+    <p>Link: <a href="https://www.taniarascia.com/using-reduce-in-javascript/">Tania Rascia - Using reduce in JavaScript</a></p>
+    <p>Link: <a href="https://www.smashingmagazine.com/2020/06/understanding-reduce/">Smashing Magazine - Understanding reduce()</a></p>
+
+    <script src="script.js"> </script>
+</body>
+</html>
