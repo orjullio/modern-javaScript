@@ -36,6 +36,6 @@ function showKeyCode(e) {
 
         insert.appendChild(div);
     }
-
+}
 
 window.addEventListener('keydown', showKeyCode);
